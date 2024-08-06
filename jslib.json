@@ -1,0 +1,67 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate config that should be used for any JS/TS libraries",
+  "configMigration": true,
+  "extends": ["config:js-lib", ":gitSignOff"],
+  "schedule": [
+    "On the 1st day of the month on Sunday",
+    "On the 2nd day of the month on Sunday",
+    "On the 3rd day of the month on Sunday",
+    "On the 4th day of the month on Sunday",
+    "On the 5th day of the month on Sunday",
+    "On the 6th day of the month on Sunday",
+    "On the 7th day of the month on Sunday"
+  ],
+  "timezone": "America/New_York",
+  "prHourlyLimit": 0,
+  "labels": ["dependencies"],
+  "assignees": ["bachmacintosh"],
+  "rebaseWhen": "behind-base-branch",
+  "platformCommit": "enabled",
+  "minimumReleaseAge": "3 days",
+  "dependencyDashboardHeader": "",
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "platformAutomerge": true
+    },
+    {
+      "matchPackageNames": [
+        "/^@bachmacintosh/",
+        "@cloudflare/workers-types",
+        "@octokit/types",
+        "@octokit/webhooks-types",
+        "discord-api-types"
+      ],
+      "schedule": ["at any time"],
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["patch"],
+      "labels": ["typescript"],
+      "commitMessageTopic": "TypeScript development version",
+      "automerge": true,
+      "platformAutomerge": true
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["major", "minor"],
+      "labels": ["typescript"],
+      "commitMessageTopic": "TypeScript development version",
+      "dependencyDashboardApproval": true,
+      "automerge": false,
+      "platformAutomerge": false
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "matchDepTypes": ["peerDependencies"],
+      "labels": ["typescript"],
+      "commitMessageTopic": "supported TypeScript versions",
+      "dependencyDashboardApproval": true,
+      "automerge": false,
+      "platformAutomerge": false
+    }
+  ]
+}
