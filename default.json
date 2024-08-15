@@ -32,7 +32,8 @@
         "@cloudflare/workers-types",
         "@octokit/types",
         "@octokit/webhooks-types",
-        "discord-api-types"
+        "discord-api-types",
+        "renovate"
       ],
       "schedule": ["at any time"],
       "minimumReleaseAge": "3 days"
