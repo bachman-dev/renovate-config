@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Renovate config that should be used for any JS/TS libraries",
   "extends": ["config:js-lib", ":gitSignOff"],
-  "dependencyDashboardHeader": "# Dependency Dashboard \n **Renovate Config**: [bachman-dev/renovate-config:jslib](https://github.com/bachman-dev/renovate-config/blob/main/jslib.json)",
+  "dependencyDashboardHeader": "# Dependency Dashboard \n\n **Renovate Config**: [bachman-dev/renovate-config:jslib](https://github.com/bachman-dev/renovate-config/blob/main/jslib.json)",
   "configMigration": true,
   "schedule": [
     "On the 1st day of the month on Sunday",
