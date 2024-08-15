@@ -22,9 +22,13 @@
   "dependencyDashboardHeader": "",
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
       "automerge": true,
       "platformAutomerge": true
+    },
+    {
+      "matchUpdateTypes": ["pin", "pinDigest"],
+      "schedule": ["at any time"]
     },
     {
       "matchPackageNames": [
