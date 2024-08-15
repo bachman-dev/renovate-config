@@ -22,13 +22,26 @@
   "dependencyDashboardHeader": "",
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
       "automerge": true,
       "platformAutomerge": true
     },
     {
+      "matchUpdateTypes": ["pin", "pinDigest"],
+      "schedule": ["at any time"]
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "commitMessageTopic": "devDependency {{depName}}"
+    },
+    {
+      "matchDepTypes": ["peerDependencies"],
+      "commitMessageTopic": "peerDependency {{depName}}"
+    },
+    {
       "matchPackageNames": [
         "/^@bachmacintosh/",
+        "/^@bachman-dev/",
         "@cloudflare/workers-types",
         "@octokit/types",
         "@octokit/webhooks-types",
