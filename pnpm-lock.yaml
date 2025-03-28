@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 39.213.3
-        version: 39.213.3(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 39.213.4
+        version: 39.213.4(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -1012,8 +1012,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  better-sqlite3@11.9.0:
-    resolution: {integrity: sha512-4b9xYnoaskj8eIkke9ZCB42p5bOPabptSku8Rl4Yww70Jf+aHeLvrIjXDJrKQxUEjdppsFb+fdJSjoH4TklROA==}
+  better-sqlite3@11.9.1:
+    resolution: {integrity: sha512-Ba0KR+Fzxh2jDRhdg6TSH0SJGzb8C0aBY4hR8w8madIdIzzC6Y1+kx5qR6eS1Z+Gy20h6ZU28aeyg0z1VIrShQ==}
 
   bignumber.js@9.1.2:
     resolution: {integrity: sha512-2/mKyZH9K85bzOEfhXDBFZTGd1CTs+5IHpeFQo9luiBG7hghdC851Pj2WAhb6E3R6b9tZj/XKhbg4fum+Kepug==}
@@ -2383,8 +2383,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.213.3:
-    resolution: {integrity: sha512-cUEFRTD/eCVfQcrqWVjMAvUhWm3jFFFV6efiOCd+z+EpWuxeHBn1z1zliut+nIOxDm5c0y7eUWD6yq1QLJDj6Q==}
+  renovate@39.213.4:
+    resolution: {integrity: sha512-33HTQiUjKGJD93Lsh2rc4JoAI82++WlFiklXh6t8qUuBd9rvBW6rXbA0el9wx45uhgaqP7C43C5mXdNUH7jO3A==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4855,7 +4855,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  better-sqlite3@11.9.0:
+  better-sqlite3@11.9.1:
     dependencies:
       bindings: 1.5.0
       prebuild-install: 7.1.2
@@ -6367,7 +6367,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.213.3(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.213.4(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
@@ -6482,7 +6482,7 @@ snapshots:
       yaml: 2.7.0
       zod: 3.24.2
     optionalDependencies:
-      better-sqlite3: 11.9.0
+      better-sqlite3: 11.9.1
       openpgp: 6.1.0
       re2: 1.21.4
     transitivePeerDependencies:
