@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 40.0.1
-        version: 40.0.1(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 40.0.4
+        version: 40.0.4(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -1459,8 +1459,8 @@ packages:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
     hasBin: true
 
-  glob@11.0.1:
-    resolution: {integrity: sha512-zrQDm8XPnYEKawJScsnM0QzobJxlT/kHOOlRTio8IH/GrmxRE5fjllkzdaHclIuNjUQTJYH2xHNIGfdpJkDJUw==}
+  glob@11.0.2:
+    resolution: {integrity: sha512-YT7U7Vye+t5fZ/QMkBFrTJ7ZQxInIUjwyAjVj84CYXqgBdv30MFUPGnBR6sQaVq6Is15wYJUsnzTuWaGRBhBAQ==}
     engines: {node: 20 || >=22}
     hasBin: true
 
@@ -2332,8 +2332,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.0.1:
-    resolution: {integrity: sha512-biq0zhljxwnPdKQbKn+BIleD/XyLby01ZNVtLwIisRjAB9Xs1pJ0HyTSSp51k35zsHq9lPKxjkfli+xTRADY9g==}
+  renovate@40.0.4:
+    resolution: {integrity: sha512-p6rc5ChiPOgD5kiwmXQWpkw3v5P4EXSiKrSezmEXehbfyqlqDPgmT90gnatv4wgQlM5oyk6nLHbiUlXY4tjwgg==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -5124,7 +5124,7 @@ snapshots:
       package-json-from-dist: 1.0.0
       path-scurry: 1.11.1
 
-  glob@11.0.1:
+  glob@11.0.2:
     dependencies:
       foreground-child: 3.2.1
       jackspeak: 4.0.1
@@ -6101,7 +6101,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.0.1(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.0.4(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.777.0
       '@aws-sdk/client-ec2': 3.779.0
@@ -6167,7 +6167,7 @@ snapshots:
       fs-extra: 11.3.0
       git-url-parse: 16.1.0
       github-url-from-git: 1.5.0
-      glob: 11.0.1
+      glob: 11.0.2
       global-agent: 3.0.0
       good-enough-parser: 1.1.23
       google-auth-library: 9.15.1(encoding@0.1.13)
