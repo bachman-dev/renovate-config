@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 40.14.6
-        version: 40.14.6(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 40.15.0
+        version: 40.15.0(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -2022,9 +2022,6 @@ packages:
     resolution: {integrity: sha512-at/ZndSy3xEGJ8i0ygALh8ru9qy7gWW1cmkaqBN29JmMlIvM//MEO9y1sk/avxuwnPcfhkejkLsuPxH81BrkSg==}
     engines: {node: '>=0.8.0'}
 
-  nan@2.20.0:
-    resolution: {integrity: sha512-bk3gXBZDGILuuo/6sKtr0DQmSThYHLtNCdSdXk9YkxD/jK6X2vmCyyXBBxyqZ4XcnzTyYEAThfX3DCEnLf6igw==}
-
   nan@2.22.2:
     resolution: {integrity: sha512-DANghxFkS1plDdRsX0X9pm0Z6SJNN6gBdtXfanwoZ8hooC5gosGFSBGRYHUVPz1asKA/kMRqDRdHrluZ61SpBQ==}
 
@@ -2344,8 +2341,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@40.14.6:
-    resolution: {integrity: sha512-7A5MQYF7haeECm2q684DxEMkqQwJNSFc9F5tHBZVs0yENobpSrAbrAieoSA0aFkV+UV2cZJURNcGXMpiu7QMTQ==}
+  renovate@40.15.0:
+    resolution: {integrity: sha512-EeF7O+hb6EDwhBM0lShYTR8er27C6NadxNJUVB7lIOKP052oefjnZKgFmvzRVXF9La3SVYgv//JG5k8ohfr+SA==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -4884,7 +4881,7 @@ snapshots:
 
   dtrace-provider@0.8.8:
     dependencies:
-      nan: 2.20.0
+      nan: 2.22.2
     optional: true
 
   eastasianwidth@0.2.0: {}
@@ -5733,9 +5730,6 @@ snapshots:
       rimraf: 2.4.5
     optional: true
 
-  nan@2.20.0:
-    optional: true
-
   nan@2.22.2:
     optional: true
 
@@ -6099,7 +6093,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@40.14.6(encoding@0.1.13)(typanion@3.14.0):
+  renovate@40.15.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.799.0
       '@aws-sdk/client-ec2': 3.800.0
