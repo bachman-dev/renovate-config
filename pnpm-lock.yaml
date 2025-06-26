@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 41.6.0
-        version: 41.6.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.6.3
+        version: 41.6.3(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -1140,8 +1140,8 @@ packages:
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
-  croner@9.0.0:
-    resolution: {integrity: sha512-onMB0OkDjkXunhdW9htFjEhqrD54+M94i6ackoUkjHKbRnXdyEyKRelp4nJ1kAz32+s27jP1FsebpJCVl0BsvA==}
+  croner@9.1.0:
+    resolution: {integrity: sha512-p9nwwR4qyT5W996vBZhdvBCnMhicY5ytZkR4D1Xj0wuTDEiMnjwR57Q3RXYY/s0EpX6Ay3vgIcfaR+ewGHsi+g==}
     engines: {node: '>=18.0'}
 
   cronstrue@2.61.0:
@@ -2398,8 +2398,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.6.0:
-    resolution: {integrity: sha512-X2707Ws8be6T7s2Vng56Onmof8MKlSWiX+/j9jCs+lpUnsR+jpt/BoCaHXFkvOsPWQeCdRyu8ilUC3jENEON+Q==}
+  renovate@41.6.3:
+    resolution: {integrity: sha512-iJ+OhPC0EUKr6LwM6aMp5tGcXGK4mC8njvBUu6CjzI0Sgs2l3P4ge67zeEE8wQYT4y5lhZOzXqIIHVzdr61diw==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -2896,8 +2896,8 @@ packages:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
-  zod@3.25.65:
-    resolution: {integrity: sha512-kMyE2qsXK1p+TAvO7zsf5wMFiCejU3obrUDs9bR1q5CBKykfvp7QhhXrycUylMoOow0iEUSyjLlZZdCsHwSldQ==}
+  zod@3.25.66:
+    resolution: {integrity: sha512-qr0yTfytD1ne6C9uZi0iu4+TGp+1J6wqoC17ugWg7EPuqT/ml21I2rqYbfeOPjeg6vHPnayIsD3CS3egsPaBrg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -4053,7 +4053,7 @@ snapshots:
       fs-extra: 11.3.0
       toml-eslint-parser: 0.10.0
       upath: 2.0.1
-      zod: 3.25.65
+      zod: 3.25.66
 
   '@renovatebot/kbpgp@4.0.1':
     dependencies:
@@ -4837,7 +4837,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  croner@9.0.0: {}
+  croner@9.1.0: {}
 
   cronstrue@2.61.0: {}
 
@@ -6282,7 +6282,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.6.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.6.3(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.821.0
       '@aws-sdk/client-ec2': 3.821.0
@@ -6330,7 +6330,7 @@ snapshots:
       clean-git-ref: 2.0.1
       commander: 14.0.0
       conventional-commits-detector: 1.0.3
-      croner: 9.0.0
+      croner: 9.1.0
       cronstrue: 2.61.0
       deepmerge: 4.3.1
       dequal: 2.0.3
@@ -6399,7 +6399,7 @@ snapshots:
       vuln-vects: 1.1.0
       xmldoc: 1.3.0
       yaml: 2.8.0
-      zod: 3.25.65
+      zod: 3.25.66
     optionalDependencies:
       better-sqlite3: 11.10.0
       openpgp: 6.1.1
@@ -6938,6 +6938,6 @@ snapshots:
 
   yocto-queue@1.2.1: {}
 
-  zod@3.25.65: {}
+  zod@3.25.66: {}
 
   zwitch@2.0.4: {}
