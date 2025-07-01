@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 41.16.0
-        version: 41.16.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.16.1
+        version: 41.16.1(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -1146,6 +1146,7 @@ packages:
 
   cronstrue@2.61.0:
     resolution: {integrity: sha512-ootN5bvXbIQI9rW94+QsXN5eROtXWwew6NkdGxIRpS/UFWRggL0G5Al7a9GTBFEsuvVhJ2K3CntIIVt7L2ILhA==}
+    deprecated: Non-backwards compatible Breaking changes
     hasBin: true
 
   cross-spawn@7.0.6:
@@ -2398,8 +2399,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.16.0:
-    resolution: {integrity: sha512-6CUfu5I+r4CCPaM6dAdgHYG/WN2f8zA+pXSAUIWIsuio7SAlYLkobQeXKmqUX7A+Cj+rch2h1gTaEXaRANt8hg==}
+  renovate@41.16.1:
+    resolution: {integrity: sha512-mgZ7O+EwK4+qykwxwaLLMIPtZowtDN39Gh23vaku4Xm6buyQymD/VVGnuKZG/IhYzfeisZGI8fO6VujbK/sN8w==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -6282,7 +6283,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.16.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.16.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.821.0
       '@aws-sdk/client-ec2': 3.821.0
