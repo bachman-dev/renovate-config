@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 41.104.0
-        version: 41.104.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 41.107.0
+        version: 41.107.0(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -914,6 +914,9 @@ packages:
   adm-zip@0.5.16:
     resolution: {integrity: sha512-TGw5yVi4saajsSEgz25grObGHEUaDrniwvA2qwSC060KfqGPdglhvPMA2lPIoxs3PQIItj2iag35fONcQqgUaQ==}
     engines: {node: '>=12.0'}
+
+  ae-cvss-calculator@1.0.8:
+    resolution: {integrity: sha512-ud8g+BQTSJoeuB4nOnbhu/Fd7TnGEnnr1AYOA+uFaEDQB0IOgjxHA2ds5iOmLh5Os6ziGCJJqjEFOFeWMOVQ4Q==}
 
   agent-base@7.1.1:
     resolution: {integrity: sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==}
@@ -2494,8 +2497,8 @@ packages:
   remark@15.0.1:
     resolution: {integrity: sha512-Eht5w30ruCXgFmxVUSlNWQ9iiimq07URKeFS3hNc8cUWy1llX4KDWfyEDZRycMc+znsN9Ux5/tJ/BFdgdOwA3A==}
 
-  renovate@41.104.0:
-    resolution: {integrity: sha512-Cy9Y1bPGVmv2/hb4wWCDYFb8l9cK8ZFPFk3za9xvcCK7zFA2NWzhhE91/wQ464sxSmThDfbsOZsK9cq8p65BKQ==}
+  renovate@41.107.0:
+    resolution: {integrity: sha512-X/gfBAeGrCrJc4bWz0+lJfOzziXLEJ4E3+GdnRhSOR3bWDNxIAuBbNGvNTrJ3L+CVZKQnyVIiztMxuUc65lHig==}
     engines: {node: ^22.13.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -2913,9 +2916,6 @@ packages:
 
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
-
-  vuln-vects@1.1.0:
-    resolution: {integrity: sha512-LGDwn9nRz94YoeqOn2TZqQXzyonBc5FJppSgH34S/1U+3bgPONq/vvfiCbCQ4MeBll58xx+kDmhS73ac+EHBBw==}
 
   web-streams-polyfill@3.3.3:
     resolution: {integrity: sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==}
@@ -4728,6 +4728,8 @@ snapshots:
   acorn@8.12.1: {}
 
   adm-zip@0.5.16: {}
+
+  ae-cvss-calculator@1.0.8: {}
 
   agent-base@7.1.1:
     dependencies:
@@ -6604,7 +6606,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@41.104.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@41.107.0(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.879.0
       '@aws-sdk/client-ec2': 3.879.0
@@ -6640,6 +6642,7 @@ snapshots:
       '@sindresorhus/is': 7.0.2
       '@yarnpkg/core': 4.4.3(typanion@3.14.0)
       '@yarnpkg/parsers': 3.0.3
+      ae-cvss-calculator: 1.0.8
       agentkeepalive: 4.6.0
       async-mutex: 0.5.0
       auth-header: 1.0.0
@@ -6720,7 +6723,6 @@ snapshots:
       upath: 2.0.1
       url-join: 5.0.0
       validate-npm-package-name: 6.0.2
-      vuln-vects: 1.1.0
       xmldoc: 2.0.2
       yaml: 2.8.1
       zod: 3.25.76
@@ -7180,8 +7182,6 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
-
-  vuln-vects@1.1.0: {}
 
   web-streams-polyfill@3.3.3: {}
 
