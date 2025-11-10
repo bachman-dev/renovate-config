@@ -1,25 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "description": "Renovate config that should be used for any JS/TS applications",
-  "extends": ["config:js-app", ":gitSignOff"],
+  "extends": ["config:best-practices", ":pinAllExceptPeerDependencies", ":gitSignOff"],
   "dependencyDashboardHeader": "# Dependency Dashboard \n\n **Renovate Config**: [bachman-dev/renovate-config](https://github.com/bachman-dev/renovate-config/blob/main/default.json)",
   "configMigration": true,
-  "schedule": [
-    "On the 1st day of the month on Sunday",
-    "On the 2nd day of the month on Sunday",
-    "On the 3rd day of the month on Sunday",
-    "On the 4th day of the month on Sunday",
-    "On the 5th day of the month on Sunday",
-    "On the 6th day of the month on Sunday",
-    "On the 7th day of the month on Sunday"
-  ],
+  "schedule": ["* * 1-7 * */7"],
   "timezone": "America/New_York",
   "prHourlyLimit": 0,
   "labels": ["dependencies"],
   "assignees": ["bachmacintosh"],
   "rebaseWhen": "behind-base-branch",
   "platformCommit": "enabled",
-  "minimumReleaseAge": "3 days",
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
@@ -33,6 +24,7 @@
     {
       "matchPackageNames": [
         "/^@bachmacintosh/",
+        "/^@bachman-dev/",
         "@cloudflare/workers-types",
         "@octokit/types",
         "@octokit/webhooks-types",

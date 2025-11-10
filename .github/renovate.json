@@ -1,4 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>bachman-dev/renovate-config"]
+  "extends": ["github>bachman-dev/renovate-config"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["renovate"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "schedule": ["* 0 * * 0"]
+    },
+    {
+      "matchPackageNames": ["renovate"],
+      "matchUpdateTypes": ["major"],
+      "schedule": ["* * * * *"]
+    }
+  ]
 }
