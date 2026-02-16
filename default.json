@@ -11,6 +11,12 @@
   "assignees": ["bachmacintosh"],
   "rebaseWhen": "behind-base-branch",
   "platformCommit": "enabled",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "platformAutomerge": true,
+    "schedule": ["* 0-3 * * 0"]
+  },
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest", "pinDigest"],
