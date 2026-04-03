@@ -15,7 +15,8 @@
     "enabled": true,
     "automerge": true,
     "platformAutomerge": true,
-    "schedule": ["* 0-3 * * 0"]
+    "schedule": ["* 0-3 * * 0"],
+    "labels": []
   },
   "packageRules": [
     {
