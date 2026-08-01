@@ -11,6 +11,6 @@
   "license": "ISC",
   "packageManager": "pnpm@11.18.0",
   "devDependencies": {
-    "renovate": "43.249.5"
+    "renovate": "44.1.0"
   }
 }
