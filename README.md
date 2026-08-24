@@ -54,3 +54,5 @@ pnpm test:local
 ```shell
 pnpm test:github
 ```
+
+There are also individual local tests for each config in case only one needs to be run.
