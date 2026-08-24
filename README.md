@@ -24,7 +24,7 @@ Use this config with JS/TS libraries.
 }
 ```
 
-# `oxlint-tsgolint`
+## `oxlint-tsgolint`
 
 Oxlint uses `tsgolint` when it's configured to do type-aware linting. This config establishes a Custom Manager that keeps a repository's TypeScript version matched to the current `tsgolint` version, as their versions are derived from their supported TS version + a small patch incrament (e.g. a version for TypeScript 7.0.2 may look like 7.0.2001).
 
@@ -35,4 +35,20 @@ For projects that are using `tsgolint`, extend the `oxlint-tsgolint` config *in 
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>bachman-dev/renovate-config", "github>bachman-dev/renovate-config:oxlint-tsgolint"]
 }
+```
+
+# Development
+
+We use mise-en-place for tool and environment management. Create a `mise.local.toml` in the project's directory, set a `RENOVATE_TOKEN` with the [correct permissions as described in the Renovate docs](), and use the test commands to evaluate changes -- either `test:local` for package rule evaluations, or `test:gitHub` for PR and other GitHub specific integration.
+
+```shell
+mise install
+```
+
+```shell
+pnpm test:local
+```
+
+```shell
+pnpm test:github
 ```
