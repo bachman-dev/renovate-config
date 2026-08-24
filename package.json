@@ -4,7 +4,12 @@
   "private": true,
   "description": "",
   "scripts": {
-    "validate": "renovate-config-validator --strict && renovate-config-validator --strict default.json && renovate-config-validator --strict jslib.json"
+    "test:default": "cd test/fixtures/default && RENOVATE_CONFIG_FILE=$OLDPWD/default.json LOG_LEVEL=debug renovate --dry-run=lookup",
+    "test:github": "LOG_LEVEL=debug renovate --platform=github --dry-run bachman-dev/renovate-config",
+    "test:jslib": "cd test/fixtures/jslib && RENOVATE_CONFIG_FILE=$OLDPWD/jslib.json LOG_LEVEL=debug renovate --dry-run=lookup",
+    "test:local": "pnpm run test:default && pnpm run test:jslib && pnpm run test:oxlint-tsgolint",
+    "test:oxlint-tsgolint": "cd test/fixtures/oxlint-tsgolint && RENOVATE_CONFIG_FILE=$OLDPWD/oxlint-tsgolint.json LOG_LEVEL=debug renovate --dry-run=lookup",
+    "validate": "renovate-config-validator --strict && renovate-config-validator --strict --no-global default.json && renovate-config-validator --strict --no-global jslib.json && renovate-config-validator --strict --no-global oxlint-tsgolint.json"
   },
   "keywords": [],
   "author": "",

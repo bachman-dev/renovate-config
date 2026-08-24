@@ -1,0 +1,55 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Keeps TypeScript pinned to a release oxlint-tsgolint supports.",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Resolve TypeScript versions from oxlint-tsgolint releases",
+      "managerFilePatterns": ["/(^|/)package\\.json$/"],
+      "matchStrings": ["\"typescript\"\\s*:\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""],
+      "depNameTemplate": "typescript",
+      "depTypeTemplate": "devDependencies",
+      "packageNameTemplate": "oxlint-tsgolint",
+      "datasourceTemplate": "npm",
+      "extractVersionTemplate": "^(?<version>\\d+\\.\\d+\\.\\d+)\\d{3}$"
+    }
+  ],
+  "packageRules": [
+    {
+      "description": "The custom manager owns the pinned TypeScript version",
+      "matchManagers": ["npm"],
+      "matchDepNames": ["typescript"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "enabled": false
+    },
+    {
+      "description": "Re-apply the default TypeScript patch policy, matched by depName",
+      "matchDepNames": ["typescript"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchUpdateTypes": ["patch"],
+      "labels": ["typescript"],
+      "commitMessageTopic": "TypeScript development version",
+      "automerge": true,
+      "platformAutomerge": true
+    },
+    {
+      "description": "Re-apply the default TypeScript major/minor policy, matched by depName",
+      "matchDepNames": ["typescript"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "matchUpdateTypes": ["major", "minor"],
+      "labels": ["typescript"],
+      "commitMessageTopic": "TypeScript development version",
+      "dependencyDashboardApproval": true,
+      "automerge": false,
+      "platformAutomerge": false
+    },
+    {
+      "description": "TypeScript and oxlint-tsgolint move as one",
+      "matchDepNames": ["typescript", "oxlint-tsgolint"],
+      "matchDepTypes": ["dependencies", "devDependencies"],
+      "groupName": "TypeScript",
+      "groupSlug": "typescript",
+      "labels": ["typescript"]
+    }
+  ]
+}
