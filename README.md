@@ -23,3 +23,16 @@ Use this config with JS/TS libraries.
   "extends": ["github>bachman-dev/renovate-config:jslib"]
 }
 ```
+
+# `oxlint-tsgolint`
+
+Oxlint uses `tsgolint` when it's configured to do type-aware linting. This config establishes a Custom Manager that keeps a repository's TypeScript version matched to the current `tsgolint` version, as their versions are derived from their supported TS version + a small patch incrament (e.g. a version for TypeScript 7.0.2 may look like 7.0.2001).
+
+For projects that are using `tsgolint`, extend the `oxlint-tsgolint` config *in addition to* the default or `jslib` config.
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>bachman-dev/renovate-config", "github>bachman-dev/renovate-config:oxlint-tsgolint"]
+}
+```
