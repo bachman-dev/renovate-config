@@ -2084,10 +2084,6 @@ packages:
     resolution: {integrity: sha512-T8BatKGY+k5rU+Q/GTYgrEf2r4xRMevAN5mtXc2aPc4rS1j3s+vWTaO2Wag94neXuCAUAs8cxBL9EeB5EA6diw==}
     engines: {node: '>=16'}
 
-  p-map@7.0.8:
-    resolution: {integrity: sha512-MitaVsCuCFIvOLLPIU7NnfrZvS9H9h7kwMUkDo+T2pEISaJD48IV9S8iIdXB7PsvvdxyYcsSTTrr90XKsbulNw==}
-    engines: {node: '>=18'}
-
   p-map@7.1.1:
     resolution: {integrity: sha512-6Lh3jQPLthYujSrlw6ccWXBGZTkoTCz27Hd92g79LH/kjAbgoEu0t442cCCNbegPSJsA0lwDX8z0bcKtkpA32g==}
     engines: {node: '>=18'}
@@ -3586,7 +3582,7 @@ snapshots:
       minipass-collect: 2.0.1
       minipass-flush: 1.0.7
       minipass-pipeline: 1.2.4
-      p-map: 7.0.8
+      p-map: 7.1.1
       ssri: 13.0.1
 
   cacheable-lookup@5.0.4: {}
@@ -4814,8 +4810,6 @@ snapshots:
   p-map@2.1.0: {}
 
   p-map@6.0.0: {}
-
-  p-map@7.0.8: {}
 
   p-map@7.1.1: {}
 
