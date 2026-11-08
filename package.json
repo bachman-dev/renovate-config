@@ -15,7 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "renovate": "44.192.2"
+    "renovate": "44.216.4"
   },
   "devEngines": {
     "packageManager": {
